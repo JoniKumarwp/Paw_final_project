@@ -1,12 +1,8 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "hotel_booking_db";
 
-$conn = mysqli_connect($host, $user, $pass, $db);
-
+$conn = mysqli_connect('localhost:3307', 'root', '', 'hotel_booking_db');
 if (!$conn) {
-    die("Koneksi Gagal: " . mysqli_connect_error());
+    echo "koneksi error";
 }
+
 ?>
