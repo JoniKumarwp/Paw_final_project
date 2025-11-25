@@ -1,8 +1,8 @@
  
 <?php
 // include "header.php";
-require 'koneksi.php';
 session_start();
+require 'koneksi.php';
 
 /* ========== AUTH CHECK ========== */
 if (!isset($_SESSION['role'])) {
@@ -466,3 +466,4 @@ $past_list = mysqli_query($conn, "
 
 </body>
 </html>
+
